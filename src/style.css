@@ -1,0 +1,124 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  background-image: url('./map_clean.png');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.vent-btn {
+  position: absolute;
+  width: 81px;
+  height: 51px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-image: url('./vent.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+.vent-btn:hover {
+  background-image: url('./vent_hover.png');
+}
+
+#medbay {
+  left: 31.8%;
+  top: 47%;
+}
+
+#caft {
+  left: 61%;
+  top: 27%;
+}
+
+#shld {
+  left: 72%;
+  top: 81%;
+}
+
+#up-eng {
+  left: 19%;
+  top: 16.5%;
+}
+
+#low-eng {
+  left: 18.5%;
+  top: 77.5%;
+}
+
+#up-react {
+  left: 6%;
+  top: 37%;
+}
+
+#down-react {
+  left: 9%;
+  top: 53%;
+}
+
+#sec {
+  left: 25.5%;
+  top: 53%;
+}
+
+#elct {
+  left: 33%;
+  top: 56%;
+}
+
+#admin {
+  left: 59%;
+  top: 64%;
+}
+
+#wep {
+  left: 71%;
+  top: 13.5%;
+}
+
+#hall {
+  left: 73.5%;
+  top: 49.5%;
+}
+
+#nav-down {
+  left: 88%;
+  top: 50%;
+}
+
+#nav-up {
+  left: 87.6%;
+  top: 37.3%;
+}
+
+#ing {
+  background: rgb(245, 245, 245);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(20, 20, 20);
+  font-size: 2em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 2;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
