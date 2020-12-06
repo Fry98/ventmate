@@ -1,6 +1,6 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const processLib = require('process');
-const memoryjs = require('@luchanso/memoryjs');
+const memoryjs = require('@fry98/memoryjs');
 const coordList = require('./locations.js');
 const processName = "Among Us.exe";
 
