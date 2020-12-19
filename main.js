@@ -4,7 +4,7 @@ const memoryjs = require('@fry98/memoryjs');
 const coordList = require('./locations.js');
 const processName = "Among Us.exe";
 
-const offsets = [null, 92, 0, 96, 56, 8, 92, 48];
+const offsets = [null, 92, 0, 96, 56, 8, 92, 44];
 let process = null;
 let dll = null;
 
@@ -39,10 +39,10 @@ function createWindow () {
     tryOpen();
     if (process === null) return;
 
-    const yCordAddr = getDataAddr(process.handle, offsets);
-    if (yCordAddr === null) return;
+    const xCordAddr = getDataAddr(process.handle, offsets);
+    if (xCordAddr === null) return;
 
-    const xCordAddr = yCordAddr - 4;
+    const yCordAddr = xCordAddr + 4;
     memoryjs.writeMemory(process.handle, xCordAddr, coordList[location][0], 'float');
     memoryjs.writeMemory(process.handle, yCordAddr, coordList[location][1], 'float');
   });
@@ -57,7 +57,7 @@ function createWindow () {
     try {
       process = memoryjs.openProcess(processName);
       dll = memoryjs.findModule("GameAssembly.dll", process.th32ProcessID);
-      offsets[0] = dll.modBaseAddr + 29233612;
+      offsets[0] = dll.modBaseAddr + 29720444;
       win.webContents.send('open');
     } catch {
       process = null;
