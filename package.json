@@ -1,7 +1,7 @@
 {
   "name": "ventmate",
   "version": "1.0.0",
-  "description": "Fry",
+  "description": "It's not cheating if nobody figures it out",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -22,8 +22,8 @@
       "output": "dist"
     }
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Fry",
+  "license": "MIT",
   "dependencies": {
     "@fry98/memoryjs": "^3.3.1"
   },
