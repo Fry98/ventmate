@@ -8,7 +8,6 @@ body {
 }
 
 #app {
-  background-image: url('./map_clean.png');
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -31,74 +30,195 @@ body {
   background-image: url('./vent_hover.png');
 }
 
-#medbay {
-  left: 31.8%;
-  top: 47%;
+select,option {
+  background-color: black;
+  color: white;
+  outline: none;
 }
 
-#caft {
+#id0 {
   left: 61%;
   top: 27%;
 }
 
-#shld {
-  left: 72%;
-  top: 81%;
+#id1 {
+  left: 31.8%;
+  top: 47%;
 }
 
-#up-eng {
+#id2 {
   left: 19%;
   top: 16.5%;
 }
 
-#low-eng {
-  left: 18.5%;
-  top: 77.5%;
-}
-
-#up-react {
-  left: 6%;
-  top: 37%;
-}
-
-#down-react {
-  left: 9%;
-  top: 53%;
-}
-
-#sec {
+#id3 {
   left: 25.5%;
   top: 53%;
 }
 
-#elct {
+#id4 {
+  left: 6%;
+  top: 37%;
+}
+
+#id5 {
+  left: 9%;
+  top: 53%;
+}
+
+#id6 {
+  left: 18.5%;
+  top: 77.5%;
+}
+
+#id7 {
   left: 33%;
   top: 56%;
 }
 
-#admin {
-  left: 59%;
-  top: 64%;
+#id8 {
+  left: 72%;
+  top: 81%;
 }
 
-#wep {
-  left: 71%;
-  top: 13.5%;
-}
-
-#hall {
+#id9 {
   left: 73.5%;
   top: 49.5%;
 }
 
-#nav-down {
+#id10 {
   left: 88%;
   top: 50%;
 }
 
-#nav-up {
+#id11 {
   left: 87.6%;
   top: 37.3%;
+}
+
+#id12 {
+  left: 71%;
+  top: 13.5%;
+}
+
+#id13 {
+  left: 59%;
+  top: 64%;
+}
+
+#id14 {
+  left: 22%;
+  top: 72%;
+}
+
+#id15 {
+  left: 60%;
+  top: 86%;
+}
+
+#id16 {
+  left: 41%;
+  top: 77%;
+}
+
+#id17 {
+  left: 44%;
+  top: 71%;
+}
+
+#id18 {
+  left: 35%;
+  top: 46%;
+}
+
+#id19 {
+  left: 51%;
+  top: 37%;
+}
+
+#id20 {
+  left: 57%;
+  top: 20%;
+}
+
+#id21 {
+  left: 70%;
+  top: 25%;
+}
+
+#id22 {
+  left: 64%;
+  top: 6%;
+}
+
+#id23 {
+  left: 73%;
+  top: 59%;
+}
+
+#id24 {
+  left: 73%;
+  top: 87%;
+}
+
+#id25 {
+  left: 14%;
+  top: 37%;
+}
+
+#id26 {
+  left: 14%;
+  top: 59%;
+}
+
+#id27 {
+  left: 23%;
+  top: 55%;
+}
+
+#id28 {
+  left: 28%;
+  top: 30%;
+}
+
+#id29 {
+  left: 53%;
+  top: 35%;
+}
+
+#id30 {
+  left: 50%;
+  top: 48%;
+}
+
+#id31 {
+  left: 33%;
+  top: 69%;
+}
+
+#id32 {
+  left: 40%;
+  top: 71%;
+}
+
+#id33 {
+  left: 44%;
+  top: 87%;
+}
+
+#id34 {
+  left: 48%;
+  top: 90%;
+}
+
+#id35 {
+  left: 68%;
+  top: 46%;
+}
+
+#id36 {
+  left: 73%;
+  top: 38%;
 }
 
 #ing {

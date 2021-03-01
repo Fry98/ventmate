@@ -1,29 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='./style.css'>
   <title>VentMate</title>
 </head>
 <body>
   <div id='ing'>Among Us not running</div>
   <div id='app'>
-    <button class='vent-btn' id='medbay' onclick="vent(1)"></button>
-    <button class='vent-btn' id='caft' onclick="vent(0)"></button>
-    <button class='vent-btn' id='shld' onclick="vent(8)"></button>
-    <button class='vent-btn' id='up-eng' onclick="vent(2)"></button>
-    <button class='vent-btn' id='low-eng' onclick="vent(6)"></button>
-    <button class='vent-btn' id='up-react' onclick="vent(4)"></button>
-    <button class='vent-btn' id='sec' onclick="vent(3)"></button>
-    <button class='vent-btn' id='down-react' onclick="vent(5)"></button>
-    <button class='vent-btn' id='elct' onclick="vent(7)"></button>
-    <button class='vent-btn' id='wep' onclick="vent(12)"></button>
-    <button class='vent-btn' id='admin' onclick="vent(13)"></button>
-    <button class='vent-btn' id='hall' onclick="vent(9)"></button>
-    <button class='vent-btn' id='nav-up' onclick="vent(11)"></button>
-    <button class='vent-btn' id='nav-down' onclick="vent(10)"></button>
+    <form id="mapSelect">
+      <select name='map' onchange='onMapChange(value);'>
+        <option value='skeld'>Skeld</option>
+        <option value='mirahq'>Mira HQ</option>
+        <option value='polus'>Polus</option>
+      </select>
+    </form>
+    <button class='vent-btn' id='id0' onclick='vent(0)'></button>
+    <button class='vent-btn' id='id1' onclick='vent(1)'></button>
+    <button class='vent-btn' id='id2' onclick='vent(2)'></button>
+    <button class='vent-btn' id='id3' onclick='vent(3)'></button>
+    <button class='vent-btn' id='id4' onclick='vent(4)'></button>
+    <button class='vent-btn' id='id5' onclick='vent(5)'></button>
+    <button class='vent-btn' id='id6' onclick='vent(6)'></button>
+    <button class='vent-btn' id='id7' onclick='vent(7)'></button>
+    <button class='vent-btn' id='id8' onclick='vent(8)'></button>
+    <button class='vent-btn' id='id9' onclick='vent(9)'></button>
+    <button class='vent-btn' id='id10' onclick='vent(10)'></button>
+    <button class='vent-btn' id='id11' onclick='vent(11)'></button>
+    <button class='vent-btn' id='id12' onclick='vent(12)'></button>
+    <button class='vent-btn' id='id13' onclick='vent(13)'></button>
+    <button class='vent-btn' id='id14' onclick='vent(14)'></button>
+    <button class='vent-btn' id='id15' onclick='vent(15)'></button>
+    <button class='vent-btn' id='id16' onclick='vent(16)'></button>
+    <button class='vent-btn' id='id17' onclick='vent(17)'></button>
+    <button class='vent-btn' id='id18' onclick='vent(18)'></button>
+    <button class='vent-btn' id='id19' onclick='vent(19)'></button>
+    <button class='vent-btn' id='id20' onclick='vent(20)'></button>
+    <button class='vent-btn' id='id21' onclick='vent(21)'></button>
+    <button class='vent-btn' id='id22' onclick='vent(22)'></button>
+    <button class='vent-btn' id='id23' onclick='vent(23)'></button>
+    <button class='vent-btn' id='id24' onclick='vent(24)'></button>
+    <button class='vent-btn' id='id25' onclick='vent(25)'></button>
+    <button class='vent-btn' id='id26' onclick='vent(26)'></button>
+    <button class='vent-btn' id='id27' onclick='vent(27)'></button>
+    <button class='vent-btn' id='id28' onclick='vent(28)'></button>
+    <button class='vent-btn' id='id29' onclick='vent(29)'></button>
+    <button class='vent-btn' id='id30' onclick='vent(30)'></button>
+    <button class='vent-btn' id='id31' onclick='vent(31)'></button>
+    <button class='vent-btn' id='id32' onclick='vent(32)'></button>
+    <button class='vent-btn' id='id33' onclick='vent(33)'></button>
+    <button class='vent-btn' id='id34' onclick='vent(34)'></button>
+    <button class='vent-btn' id='id35' onclick='vent(35)'></button>
+    <button class='vent-btn' id='id36' onclick='vent(36)'></button>
+
+
+
   </div>
-  <script src="./script.js"></script>
+  <script src='./script.js'></script>
 </body>
 </html>

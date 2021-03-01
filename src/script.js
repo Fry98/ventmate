@@ -3,6 +3,7 @@ const appEl = document.getElementById('app');
 const ingEl = document.getElementById('ing');
 const vents = document.querySelectorAll('.vent-btn');
 
+onMapChange('skeld');
 rescaleMap();
 window.onresize = rescaleMap;
 
@@ -35,3 +36,29 @@ ipcRenderer.on('open', () => {
 ipcRenderer.on('dead', () => {
   ingEl.classList.remove('hide');
 });
+
+function showVents(min, max){
+  // Hide all vents
+  for(let i = 0; i<=36; i++){
+    document.getElementById(`id${i}`).style.display = 'none';
+  }
+  // Show vents only for a certain map
+  for(let i=min; i<=max; i++){
+    document.getElementById(`id${i}`).style.display = 'block';
+  }
+}
+
+function onMapChange(map){
+  document.getElementById('app').style.backgroundImage = `url(./${map}.png)`;
+  switch(map){
+    case 'skeld':
+      showVents(0, 13);
+    break;
+    case 'mirahq':
+      showVents(14, 24);
+    break;
+    case 'polus':
+      showVents(25, 36);
+    break;
+  }
+}
