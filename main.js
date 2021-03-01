@@ -4,7 +4,7 @@ const memoryjs = require('@fry98/memoryjs');
 const coordList = require('./locations.js');
 const processName = "Among Us.exe";
 
-const offsets = [null, 92, 0, 96, 56, 8, 92, 44]; // 5C 0 60 38 8 5C 2C
+const offsets = [null, 92, 0, 96, 56, 8, 92, 44];
 let process = null;
 let dll = null;
 
@@ -41,11 +41,9 @@ function createWindow () {
 
     const xCordAddr = getDataAddr(process.handle, offsets);
     if (xCordAddr === null) return;
-    const yCordAddr = xCordAddr + 4;
-    console.log("xAdd: ", xCordAddr , "yAdd: ", yCordAddr)
+    
     memoryjs.writeMemory(process.handle, xCordAddr, coordList[location][0], 'float');
     memoryjs.writeMemory(process.handle, yCordAddr, coordList[location][1], 'float');
-    console.log("X: ", coordList[location][0], "Y: ", coordList[location][1]);
   });
 
   function tryOpen() {
@@ -73,9 +71,6 @@ function createWindow () {
       if (pointer === 0) return null;
       lastPointer = pointer + offsets[i];
     }
-    offsets.forEach(offset => {
-      console.log(offset.toString(16))
-    })
     return lastPointer;
   }
 }

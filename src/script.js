@@ -38,11 +38,9 @@ ipcRenderer.on('dead', () => {
 });
 
 function showVents(min, max){
-  // Hide all vents
   for(let i = 0; i<=36; i++){
     document.getElementById(`id${i}`).style.display = 'none';
   }
-  // Show vents only for a certain map
   for(let i=min; i<=max; i++){
     document.getElementById(`id${i}`).style.display = 'block';
   }
