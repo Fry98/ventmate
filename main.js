@@ -41,7 +41,6 @@ function createWindow () {
 
     const xCordAddr = getDataAddr(process.handle, offsets);
     if (xCordAddr === null) return;
-
     const yCordAddr = xCordAddr + 4;
     memoryjs.writeMemory(process.handle, xCordAddr, coordList[location][0], 'float');
     memoryjs.writeMemory(process.handle, yCordAddr, coordList[location][1], 'float');
@@ -72,7 +71,6 @@ function createWindow () {
       if (pointer === 0) return null;
       lastPointer = pointer + offsets[i];
     }
-
     return lastPointer;
   }
 }
