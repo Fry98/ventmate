@@ -13,6 +13,13 @@ body {
   position: relative;
 }
 
+#mapSelect {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
 .vent-btn {
   position: absolute;
   width: 81px;
